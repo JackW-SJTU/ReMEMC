@@ -1,6 +1,7 @@
+% run this code to initiate in silico benchmark
 clear
-method={'Monte Carlo','GP','lasso','regression'};
-funtype={'hill','ackley','1.2','2.22','rosenbrock'};
+method={'Monte Carlo','lasso','regression'};
+funtype={'hill','ackley','rosenbrock'};
 n_dim=[5 10 15];
 n_iter=5;
 n_exp=3;
@@ -40,8 +41,8 @@ end
 
 %%
 clear
-method={'Monte Carlo','GP','lasso','regression'};
-funtype={'hill','ackley','1.2','2.22','rosenbrock'};
+method={'Monte Carlo','lasso','regression'};
+funtype={'hill','ackley','rosenbrock'};
 n_dim=[5 10 15];
 n_iter=5;
 n_exp=3;
@@ -82,9 +83,9 @@ end
 
 %%
 clear
-method={'Monte Carlo','GP','lasso','regression'};
-funtype={'hill','ackley','1.2','2.22','rosenbrock'};
-n_dim=[15];
+method={'Monte Carlo','lasso','regression'};
+funtype={'hill','ackley','rosenbrock'};
+n_dim=[5 10 15];
 n_iter=5;
 n_exp=3;
 n_comb=48;
@@ -120,7 +121,5 @@ for k=n_dim
     end
     save(['dim_' num2str(k) '_0.5.mat'])
 end
-
-%mailto('wangboqian_723@163.com')
         
         
